@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+  box-sizing: border-box !important;
+}
+
+body {
+	font-family: Poppins;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	background-color: #222;
+}
+
+#message-container {
+	width: 100%;
+  margin-bottom: 120px;
+}
+
+#message-container div:first-child {
+	background-color: #3086e7;
+  text-align: center;
+  margin-top: 0;
+	width: 100%;
+	padding: 5px;
+}
+
+#message-container div:nth-child(2){
+  margin-top: 0;
+}
+
+#message-container div {
+color: #fff;
+  margin-top: 20px;
+
+}
+#message-container div:nth-child(2n) {
+
+	background-color: rgb(48, 48, 48);
+}
+
+#send-container {
+  position: fixed;
+  margin-bottom: 40px;
+  bottom: 0;
+  width: 80%;
+  display: flex;
+}
+
+#message-input {
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: Poppins;
+}
+
+.message-sent {
+  padding: 10px 20px;
+  word-break: break-word;
+}
+
+#send-button {
+  height: 50px;
+  width: 100px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #3086e7;
+  color: #fff;
+  font-family: poppins;
+  font-size: 16px;
+}
+
+#send-button:hover {
+  filter: brightness(1.2);
+}
+
+#message-input {
+	flex-grow: 1;
+}
